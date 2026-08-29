@@ -1,14 +1,16 @@
-#define UNICODE
-#define _UNICODE
 #define WIN32_LEAN_AND_MEAN
 
 #include <windows.h>
+#include <commctrl.h>
+#include <shellapi.h>
 #include <winhttp.h>
 
 #include <string>
 #include <sstream>
 
 #pragma comment(lib, "winhttp.lib")
+#pragma comment(lib, "comctl32.lib")
+#pragma comment(lib, "shell32.lib")
 
 #define IDC_CHECKID 1001
 #define IDC_START   1002
